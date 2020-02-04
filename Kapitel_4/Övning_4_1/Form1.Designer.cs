@@ -35,11 +35,11 @@
             this.SaveToolstripMnuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveAsToolstripMnuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CloseToolstripMnuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbxInput = new System.Windows.Forms.TextBox();
+            this.tbxOutput = new System.Windows.Forms.TextBox();
             this.btnErsätt = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbxText = new System.Windows.Forms.TextBox();
             this.dlgOpenFile = new System.Windows.Forms.OpenFileDialog();
             this.dlgSaveFile = new System.Windows.Forms.SaveFileDialog();
             this.MnuStrip.SuspendLayout();
@@ -70,51 +70,51 @@
             // NewToolstripMnuItem
             // 
             this.NewToolstripMnuItem.Name = "NewToolstripMnuItem";
-            this.NewToolstripMnuItem.Size = new System.Drawing.Size(180, 22);
+            this.NewToolstripMnuItem.Size = new System.Drawing.Size(129, 22);
             this.NewToolstripMnuItem.Text = "Nytt";
             this.NewToolstripMnuItem.Click += new System.EventHandler(this.NewToolstripMnuItem_Click);
             // 
             // OpenToolstripMnuItem
             // 
             this.OpenToolstripMnuItem.Name = "OpenToolstripMnuItem";
-            this.OpenToolstripMnuItem.Size = new System.Drawing.Size(180, 22);
+            this.OpenToolstripMnuItem.Size = new System.Drawing.Size(129, 22);
             this.OpenToolstripMnuItem.Text = "Öppna";
             this.OpenToolstripMnuItem.Click += new System.EventHandler(this.OpenToolstripMnuItem_Click);
             // 
             // SaveToolstripMnuItem
             // 
             this.SaveToolstripMnuItem.Name = "SaveToolstripMnuItem";
-            this.SaveToolstripMnuItem.Size = new System.Drawing.Size(180, 22);
+            this.SaveToolstripMnuItem.Size = new System.Drawing.Size(129, 22);
             this.SaveToolstripMnuItem.Text = "Spara";
             this.SaveToolstripMnuItem.Click += new System.EventHandler(this.SaveToolstripMnuItem_Click);
             // 
             // SaveAsToolstripMnuItem
             // 
             this.SaveAsToolstripMnuItem.Name = "SaveAsToolstripMnuItem";
-            this.SaveAsToolstripMnuItem.Size = new System.Drawing.Size(180, 22);
+            this.SaveAsToolstripMnuItem.Size = new System.Drawing.Size(129, 22);
             this.SaveAsToolstripMnuItem.Text = "Spara som";
             this.SaveAsToolstripMnuItem.Click += new System.EventHandler(this.SaveAsToolstripMnuItem_Click);
             // 
             // CloseToolstripMnuItem
             // 
             this.CloseToolstripMnuItem.Name = "CloseToolstripMnuItem";
-            this.CloseToolstripMnuItem.Size = new System.Drawing.Size(180, 22);
+            this.CloseToolstripMnuItem.Size = new System.Drawing.Size(129, 22);
             this.CloseToolstripMnuItem.Text = "Stäng";
             this.CloseToolstripMnuItem.Click += new System.EventHandler(this.CloseToolstripMnuItem_Click);
             // 
-            // textBox1
+            // tbxInput
             // 
-            this.textBox1.Location = new System.Drawing.Point(455, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
+            this.tbxInput.Location = new System.Drawing.Point(455, 41);
+            this.tbxInput.Name = "tbxInput";
+            this.tbxInput.Size = new System.Drawing.Size(100, 20);
+            this.tbxInput.TabIndex = 1;
             // 
-            // textBox2
+            // tbxOutput
             // 
-            this.textBox2.Location = new System.Drawing.Point(583, 41);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
+            this.tbxOutput.Location = new System.Drawing.Point(583, 41);
+            this.tbxOutput.Name = "tbxOutput";
+            this.tbxOutput.Size = new System.Drawing.Size(100, 20);
+            this.tbxOutput.TabIndex = 2;
             // 
             // btnErsätt
             // 
@@ -135,14 +135,15 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "->";
             // 
-            // textBox3
+            // tbxText
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 66);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox3.Size = new System.Drawing.Size(769, 372);
-            this.textBox3.TabIndex = 5;
+            this.tbxText.Location = new System.Drawing.Point(12, 66);
+            this.tbxText.Multiline = true;
+            this.tbxText.Name = "tbxText";
+            this.tbxText.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbxText.Size = new System.Drawing.Size(769, 372);
+            this.tbxText.TabIndex = 5;
+            this.tbxText.TextChanged += new System.EventHandler(this.tbxText_TextChanged);
             // 
             // dlgOpenFile
             // 
@@ -153,11 +154,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tbxText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnErsätt);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbxOutput);
+            this.Controls.Add(this.tbxInput);
             this.Controls.Add(this.MnuStrip);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -177,11 +178,11 @@
         private System.Windows.Forms.ToolStripMenuItem SaveToolstripMnuItem;
         private System.Windows.Forms.ToolStripMenuItem SaveAsToolstripMnuItem;
         private System.Windows.Forms.ToolStripMenuItem CloseToolstripMnuItem;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbxInput;
+        private System.Windows.Forms.TextBox tbxOutput;
         private System.Windows.Forms.Button btnErsätt;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbxText;
         private System.Windows.Forms.OpenFileDialog dlgOpenFile;
         private System.Windows.Forms.SaveFileDialog dlgSaveFile;
     }
