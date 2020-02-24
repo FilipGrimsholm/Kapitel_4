@@ -13,7 +13,7 @@ namespace Övning_4_3
         public string _epost;
         public string _telefonnummer;
 
-        Kontakt(string förnamn, string efternamn, string epost, string telefonnummer)
+        public Kontakt(string förnamn, string efternamn, string epost, string telefonnummer)
         {
             this._förnamn = förnamn;
             this._efternamn = efternamn;

@@ -121,6 +121,7 @@
             this.lbxKontakter.Name = "lbxKontakter";
             this.lbxKontakter.Size = new System.Drawing.Size(197, 95);
             this.lbxKontakter.TabIndex = 9;
+            this.lbxKontakter.SelectedIndexChanged += new System.EventHandler(this.lbxKontakter_SelectedIndexChanged);
             // 
             // menuStrip1
             // 
@@ -146,21 +147,21 @@
             // öppnaTsMnu
             // 
             this.öppnaTsMnu.Name = "öppnaTsMnu";
-            this.öppnaTsMnu.Size = new System.Drawing.Size(180, 22);
+            this.öppnaTsMnu.Size = new System.Drawing.Size(112, 22);
             this.öppnaTsMnu.Text = "Öppna";
             this.öppnaTsMnu.Click += new System.EventHandler(this.ÖppnaTsMnu_Click);
             // 
             // saveTsMnu
             // 
             this.saveTsMnu.Name = "saveTsMnu";
-            this.saveTsMnu.Size = new System.Drawing.Size(180, 22);
+            this.saveTsMnu.Size = new System.Drawing.Size(112, 22);
             this.saveTsMnu.Text = "Save";
             this.saveTsMnu.Click += new System.EventHandler(this.SaveTsMnu_Click);
             // 
             // saveAsTsmnu
             // 
             this.saveAsTsmnu.Name = "saveAsTsmnu";
-            this.saveAsTsmnu.Size = new System.Drawing.Size(180, 22);
+            this.saveAsTsmnu.Size = new System.Drawing.Size(112, 22);
             this.saveAsTsmnu.Text = "Save as";
             this.saveAsTsmnu.Click += new System.EventHandler(this.SaveAsTsmnu_Click);
             // 
@@ -176,14 +177,14 @@
             // läggtillTsMnu
             // 
             this.läggtillTsMnu.Name = "läggtillTsMnu";
-            this.läggtillTsMnu.Size = new System.Drawing.Size(180, 22);
+            this.läggtillTsMnu.Size = new System.Drawing.Size(116, 22);
             this.läggtillTsMnu.Text = "Lägg till";
             this.läggtillTsMnu.Click += new System.EventHandler(this.LäggtillTsMnu_Click);
             // 
             // tabortTsMnu
             // 
             this.tabortTsMnu.Name = "tabortTsMnu";
-            this.tabortTsMnu.Size = new System.Drawing.Size(180, 22);
+            this.tabortTsMnu.Size = new System.Drawing.Size(116, 22);
             this.tabortTsMnu.Text = "Ta bort";
             this.tabortTsMnu.Click += new System.EventHandler(this.TabortTsMnu_Click);
             // 
